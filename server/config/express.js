@@ -31,11 +31,15 @@ module.exports = function(app) {
 
   if (env === 'production' || env === 'localprod') {
     app.use(compression());
-    app.use(favicon(path.join(config.root, '/angular-client/build', 'favicon.ico')));
+    app.use('/angular/', favicon(path.join(config.root, '/angular-client/dist/angular-client', 'favicon.ico')));
   }
 
-  app.use(express.static(path.join(config.root, '/angular-client/build')));
-  app.set('views', config.root + '/angular-client/build');
+  app.use('/', express.static(path.join(config.root, '/server/app')));
+  app.use('/angular/', express.static(path.join(config.root, '/angular-client/dist/angular-client')));
+  app.set('views', [
+    config.root + '/base-client',
+    config.root + '/angular-client/dist/angular-client'
+  ]);
 
   app.engine('html', require('ejs').renderFile);
   app.set('view engine', 'html');
