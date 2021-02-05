@@ -2,6 +2,39 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
+<p>This is a starter template that has been slightly extended beyond a
+  vanilla angular-cli install.
+</p>
+<p>The application includes ng-bootstrap, and the bootstrap css.
+Feel free to use off-the-shelf bootstrap components to implement
+the user interface.
+</p>
+<p>Included with the code repository is a backend Express / Node.js mock
+  service. It provides a list of JSON objects representing the countries
+  of the world, as well as Create, Read, Update, and Delete REST methods
+  for the individual objects. The goal of this exercise is to implement
+  a UI that consumes these API calls.
+</p>
+
+<p><i>The API call to list the countries can be found here
+(note: see the parent / root README and start the Node.js server first):</i></p>
+<ul>
+  <li>Dev (while running ng serve):
+    <a href="http://127.0.0.1:9000/api/countries">
+      http://127.0.0.1:9000/api/countries
+    </a>
+  </li>
+  <li>Prod / Build:
+    <a href="/api/countries">
+      /api/countries
+    </a>
+  </li>
+</ul>
+<p>The Angular application has been preconfigured to use
+  the cross-domain call on port 9000 for dev,
+  and use the same-origin relative path for production / build.
+</p>
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -16,7 +49,7 @@ This project uses ng-bootstrap and Bootstrap CSS 4.x.
 Some links for reference:
 
 [https://ng-bootstrap.github.io/#/components/accordion/examples](https://ng-bootstrap.github.io/#/components/accordion/examples)
-[https://getbootstrap.com/docs/4.4/layout/overview/](https://getbootstrap.com/docs/4.4/layout/overview/) 
+[https://getbootstrap.com/docs/4.4/layout/overview/](https://getbootstrap.com/docs/4.4/layout/overview/)
 
 
 ## Build

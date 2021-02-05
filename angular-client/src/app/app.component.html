@@ -13,13 +13,50 @@
      </ul>
    </div>
 </header>
-<div class="container">
+<div class="fsjs container">
   <div class="row">
     <div class="col-md">
-      <i>Todo: implement a list view of countries provided by API call</i>
+      <p>This is a starter template that has been slightly extended beyond a
+        vanilla angular-cli install.
+      </p>
+      <p>The application includes ng-bootstrap, and the bootstrap css.
+      Feel free to use off-the-shelf bootstrap components to implement
+      the user interface.
+      </p>
+      <p>Included with the code repository is a backend Express / Node.js mock
+        service. It provides a list of JSON objects representing the countries
+        of the world, as well as Create, Read, Update, and Delete REST methods
+        for the individual objects. The goal of this exercise is to implement
+        a UI that consumes these API calls.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      <p><i>Todo: implement a list view of countries provided by API call</i></p>
+      <p><i>The API call to list the countries can be found here:</i></p>
+      <ul>
+        <li>Dev (while running ng serve):
+          <a href="http://127.0.0.1:9000/api/countries">
+            http://127.0.0.1:9000/api/countries
+          </a>
+        </li>
+        <li>Prod / Build:
+          <a href="/api/countries">
+            /api/countries
+          </a>
+        </li>
+      </ul>
+      <p>The Angular application has been preconfigured to use
+        the cross-domain call on port 9000 for dev,
+        and use the same-origin relative path for production / build.
+      </p>
+
     </div>
     <div class="col-md">
-      <i>Todo: implement detail / edit view of countries provided by API call</i>
+      <p><i>Todo: implement detail / edit view of countries provided by API call</i></p>
+      <p><i>Clicking a country in the left hand list view should update this
+        detail view with that country's data.</i></p>
     </div>
   </div>
 </div>
