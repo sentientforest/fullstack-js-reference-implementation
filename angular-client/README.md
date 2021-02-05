@@ -10,9 +10,23 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Additional Libraries
+
+This project uses ng-bootstrap and Bootstrap CSS 4.x.
+Some links for reference:
+
+[https://ng-bootstrap.github.io/#/components/accordion/examples](https://ng-bootstrap.github.io/#/components/accordion/examples)
+[https://getbootstrap.com/docs/4.4/layout/overview/](https://getbootstrap.com/docs/4.4/layout/overview/) 
+
+
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build --base-href='/angular/'` to build the project.
+
+Note the base-href flag. This ensures that our application will worked when
+served from it's relative base path by our backend Node.js server.
+
+The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
