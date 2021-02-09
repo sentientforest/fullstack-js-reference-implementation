@@ -35,6 +35,9 @@ the user interface.
   and use the same-origin relative path for production / build.
 </p>
 
+An Angular service has also been started to interact with the API and
+provide RxJS Observables and error handling from the responses. 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
