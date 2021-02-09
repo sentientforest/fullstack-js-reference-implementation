@@ -36,7 +36,7 @@ the user interface.
 </p>
 
 An Angular service has also been started to interact with the API and
-provide RxJS Observables and error handling from the responses. 
+provide RxJS Observables and error handling from the responses.
 
 ## Development server
 

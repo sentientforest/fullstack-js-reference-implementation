@@ -52,7 +52,7 @@ exports.findCountry = function findCountryById(req, res) {
   var code = req.params.code
   var country = null
   for (var i = 0; i < countries.length; i++) {
-    if (countries[i].code === code) {
+    if (countries[i]['geoname_id'] === code) {
       country = countries[i]
     }
   }
@@ -65,7 +65,13 @@ exports.findCountry = function findCountryById(req, res) {
 }
 
 exports.countriesFindAll = function findAllContexts(req, res) {
-  res.json(countries);
+  var countryListResponse = countries.map(function (elem) {
+    return {
+      name: elem.name,
+      'geoname_id': elem['geoname_id']
+    }
+  })
+  res.json(countryListResponse);
 }
 
 // Attribution for the data below:

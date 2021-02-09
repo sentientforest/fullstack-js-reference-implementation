@@ -10,3 +10,7 @@ header.navbar {
 .fsjs div.row {
   margin-bottom: 2rem;
 }
+
+.list-frame {
+  padding: 0 2.5%;
+}
